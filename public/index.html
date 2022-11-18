@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src='https://unpkg.com/cbor-web'></script>
+    <script>
+        import cbor from 'cbor-web'
+    </script>
+</head>
+<body onload="checkLogin()">
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Roadmap</a></li>
+            <li class="nav-item"><a href="#">Doxx</a></li>
+            <li class="nav-item"><a href="#" id="nami_wallet" onclick="namiLogin()">Nami</a></li>
+        </ul>
+        <a href="#" class="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+    </header>
+    <section>
+        <img src="pics/stars.png" id="stars">
+        <img src="pics/moon.png" id="moon">
+        <img src="pics/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">CNFT</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="pics/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2 id="floor_price">CNFT Project (TBD)</h2>
+        <p id="itxt">821a0485c1e3ae581c368bedeac13b8f1fbc30cdaadb987635ff95e88960b1ea216e3f96faa14f74656e7461696c656761637931323201581c3dc002874772549f7758066ae025b92a4dab66c57d187dd78821b673a34a6c746c6d6b7973363535014a6c746c6d6b7973383333014b6c746c6d6b79733238393901581c482fb00dc32186a4c587dca2df3c7cf2bc455332ab581d51967306e1a1444d4f4149190743581c49da502b625d310ad3a742c1e747c0027e83426f8717180b21c871b1a14959524941433136373401581c4b92de6b0398970dcafe4aee5329e591819ca11aa3dc163a981c7f99a54f4d654d654f66546865446179363534014f4d654d654f6654686544617937343001504d654d654f665468654461793132343001504d654d654f665468654461793133373801504d654d654f665468654461793234343901581c561696ab9e70db98f8ff5c12f0fdbd837bd1b95d84c748b04ede8fbaa14441504f43190226581c5993061274861159508aef767fc0ccd8b8a9b836171a989ad543fa1fa74f44446f53546573744d696e74373432015044446f53546573744d696e7431323132015044446f53546573744d696e7431333238015044446f53546573744d696e7432333130015044446f53546573744d696e7432393239015044446f53546573744d696e7433303037015044446f53546573744d696e743330313701581c5cf33cfea1b37c289060f55fa09c1fb3b9cb6972e40d9ed2f94a5adaa14f484d5072696f4d6f6e73746572313901581c9b542bc33521163a7ff3a05d1df1bcc0c0ec6a0638337e4b2870f6eaa153496e74726f76657274736d636172643034303201581caaf1f848b36940b0703f43f8d406b815132efe64fccb34bc30f993a0a14f466c7566667957686974656c69737401581cc76975c66380ad2bcdf6b465b3b0df34bdd76112046979b9a834364fa1534f4e434841494e20534b554c4c20233038353301581cd79181749db228d10c98501a7e1728585780bcf133b7b3df953a9017a24e496e74726f766572747332313135014e496e74726f76657274733436383901581cdd589bbcfa48c9a133a22e205da33a5d07ef79dac1f8d5d8067b1004a158187768657265734472696c6c646f54686557616c646f39353301581cf8ed2f8e4fdc992644710e45be7fdc4a556b7517ee2956414b5c2b25a14d434e4654536c6162733032373601</p>
+        <p id="otxt">2</p>
+        <p>A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD) A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD) A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD) A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD) A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD) A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD) A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)
+        A CNFT project by "group name" (TBD)</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
